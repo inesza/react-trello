@@ -1,0 +1,141 @@
+.MiniCard {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 20px;
+
+}
+
+.MiniCard,
+textarea {
+    box-shadow: 0 1px 0 #091e4240;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+textarea {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    min-height: 54px;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+}
+
+/* Full card modal */
+
+.FullCard .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1040;
+    background-color: #000000a3;
+}
+
+.FullCard .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    display: flex;
+    align-items: center;
+}
+
+.FullCard .modal {
+    z-index: 100;
+    background: #F4F5F7;
+    position: relative;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border-radius: 2px;
+    margin: 48px auto 80px;
+    overflow: hidden;
+    width: 768px;
+}
+
+.FullCard .modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.FullCard .modal-header h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.FullCard .modal-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.FullCard .modal-body main {
+    width: 70%;
+}
+
+.FullCard .card-list {
+    text-decoration: underline;
+}
+
+.FullCard .modal-body .btn {
+    width: 100%;
+    text-align: left;
+    border-radius: 3px;
+    padding: 6px 12px;
+    background-color: var(--background-neutral);
+    color: var(--ds-text, inherit);
+    transition: background-color .2s ease;
+}
+
+.FullCard .modal-body .btn:hover {
+    background-color: var(--background-neutral-hover);
+}
+
+.CardTitle {
+    display: flex;
+    align-items: flex-start;
+}
+
+.CardDescription {
+    min-height: 3rem;
+}
+
+.FullCard .delete-btn {
+    cursor: pointer;
+}
+
+.CardDescription {
+    background-color: var(--ds-background-neutral, #091e420a);
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: var(--ds-text, inherit);
+    display: block;
+    min-height: 40px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.CardListItem div {
+    display: flex;
+    gap: 1rem;
+}
+
+.CardListItem .item.checked {
+    text-decoration: line-through;
+    transition: .5s;
+}
+
+.CardChecklist ul {
+    list-style: none;
+}

@@ -1,0 +1,101 @@
+/* All lists */
+.AllLists {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+
+.btn-add-list,
+.FormList {
+    background: #ffffff3d;
+    border: none;
+    color: white;
+    width: 272px;
+    text-align: left;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+.FormList .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* List */
+.List {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+    padding: .5rem;
+    width: 272px;
+    min-width: 272px;
+    max-height: 80vh;
+    overflow-y: overlay
+}
+
+.FormList {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    height: auto;
+    min-height: 32px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .3rem;
+    /* transition: background 85ms ease-in, opacity 40ms ease-in, border-color 85ms ease-in; */
+}
+
+.FormList input {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: .5rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    /* min-height: 54px; */
+    width: 100%;
+    border: none;
+    font-family: inherit;
+}
+
+.FormList input:focus-visible {
+    outline: 2px solid blue;
+}
+
+.btn-add-card {
+    background: transparent;
+    border: none;
+    color: #5e6c84;
+}
+
+.btn-add-card span,
+.btn-add-list span {
+    /* font-weight: 600; */
+    /* font-size: 1.2rem; */
+    margin-right: 1rem;
+}
+
+
+.List h2 {
+    padding: .7rem .5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.List header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xmark {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}

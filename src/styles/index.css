@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+:root {
+  --very-dark-gray: #172b4d;
+  --dark-gray: #42526e;
+  --slightly-lighter-gray: #5e6c84;
+  --neutral-light-gray: #0000003d;
+  --background-neutral: rgba(9, 30, 66, 0.04);
+  --background-neutral-hover: rgba(9, 30, 66, 0.08);
+}
+
 /* Quick reset */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   max-width: 100%;
 }
 
-body {
-  min-height: 100vh;
+/* Show placeholder on contenteditable fields */
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block;
 }
